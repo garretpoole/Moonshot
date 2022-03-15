@@ -7,34 +7,21 @@
 
 import SwiftUI
 
-struct CustomText: View{
-    let text: String
-    
-    var body: some View{
-        Text(text)
-    }
-    
-    init(_ text: String){
-        print("Creating new CustomText")
-        self.text = text
-    }
-}
 
 struct ContentView: View {
     var body: some View {
-        //can use .horizontal in call with HStack
-        ScrollView(.vertical){
-            //.infinity to scroll entire screen
-            //VStack all rows are created immediately, not as they come into view
-            //Lazy loads them on demand but automatically take up all availbale free space in layout
-            //Regular only take up the space needed for their children
-            LazyVStack(spacing: 10){
-                ForEach(0..<100) {
-                    CustomText("Item \($0)")
-                        .font(.title)
+        NavigationView{
+            //sheet is used for showing unrelated content
+            //used for showing details about something based on user selection
+            List(0..<100){ row in
+                NavigationLink{
+                    Text("Detail \(row)")
+                } label: {
+                Text("Row \(row)")
+                    .padding()
                 }
             }
-            .frame(maxWidth: .infinity)
+            .navigationTitle("SwiftUI")
         }
     }
 }
