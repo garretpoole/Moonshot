@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        //fixed size images do not auto scale up on screen
+        //scaledToFit will leave white space
+        Image("Example")
+            .resizable()
+            .scaledToFill()
+            .frame(width: 300, height: 300)
+            
+            
     }
 }
 
