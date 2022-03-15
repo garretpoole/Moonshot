@@ -19,22 +19,17 @@ struct Address: Codable{
 
 
 struct ContentView: View {
+    let layout = [
+        GridItem(.fixed(80)),
+        GridItem(.fixed(80)),
+        GridItem(.fixed(80))
+    ]
     var body: some View {
-        Button("Decode JSON"){
-            let input = """
-            {
-            "name": "Taylor Swift",
-            "address": {
-                "street": "555, TSwift Dr",
-                "city": "Nashville"
-
+        ScrollView{
+            LazyVGrid(columns: layout){
+                ForEach(0..<1000){
+                    Text("Item \($0)")
                 }
-            }
-            """
-            
-            let data = Data(input.utf8)
-            if let user = try? JSONDecoder().decode(User.self, from: data){
-                print(user.address.street)
             }
         }
     }
