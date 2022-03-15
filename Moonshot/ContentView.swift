@@ -20,9 +20,7 @@ struct Address: Codable{
 
 struct ContentView: View {
     let layout = [
-        GridItem(.fixed(80)),
-        GridItem(.fixed(80)),
-        GridItem(.fixed(80))
+        GridItem(.adaptive(minimum: 80))
     ]
     var body: some View {
         ScrollView{
