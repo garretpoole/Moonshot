@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //fixed size images do not auto scale up on screen
-        //scaledToFit will leave white space
-        Image("Example")
-            .resizable()
-            .scaledToFill()
-            .frame(width: 300, height: 300)
+        GeometryReader{ geo in
+            Image("Example")
+                .resizable()
+                .scaledToFit()
+                .frame(width: geo.size.width * 0.8)
+                .frame(width: geo.size.width, height: geo.size.height)
+        }
+        
             
             
     }
