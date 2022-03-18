@@ -20,6 +20,11 @@ extension Bundle {
         }
         //decode the data from JSON to local instance
         let decoder = JSONDecoder()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "y-MM-dd"
+        //can use formatter.timezone to specify so it doesnt use users default timezone
+        decoder.dateDecodingStrategy = .formatted(formatter)
+        
         guard let loaded = try? decoder.decode(T.self, from: data) else{
             fatalError("Failed to decode \(file) from bundle")
         }
