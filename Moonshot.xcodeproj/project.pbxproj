@@ -14,6 +14,7 @@
 		60C6CFA127E4F02700FE3A71 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C6CFA027E4F02700FE3A71 /* Mission.swift */; };
 		60C6CFA327E4F69900FE3A71 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C6CFA227E4F69900FE3A71 /* Color-Theme.swift */; };
 		60C6CFA527E5CA1A00FE3A71 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C6CFA427E5CA1A00FE3A71 /* MissionView.swift */; };
+		60C6CFA727E5D25E00FE3A71 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C6CFA627E5D25E00FE3A71 /* AstronautView.swift */; };
 		60CEDC5927DFBCFD00B3B6CD /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CEDC5827DFBCFD00B3B6CD /* MoonshotApp.swift */; };
 		60CEDC5B27DFBCFD00B3B6CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CEDC5A27DFBCFD00B3B6CD /* ContentView.swift */; };
 		60CEDC5D27DFBCFE00B3B6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CEDC5C27DFBCFE00B3B6CD /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		60C6CFA027E4F02700FE3A71 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		60C6CFA227E4F69900FE3A71 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		60C6CFA427E5CA1A00FE3A71 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		60C6CFA627E5D25E00FE3A71 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 		60CEDC5527DFBCFD00B3B6CD /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CEDC5827DFBCFD00B3B6CD /* MoonshotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotApp.swift; sourceTree = "<group>"; };
 		60CEDC5A27DFBCFD00B3B6CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				60CEDC5827DFBCFD00B3B6CD /* MoonshotApp.swift */,
 				60CEDC5A27DFBCFD00B3B6CD /* ContentView.swift */,
 				60C6CFA427E5CA1A00FE3A71 /* MissionView.swift */,
+				60C6CFA627E5D25E00FE3A71 /* AstronautView.swift */,
 				60C6CF9C27E4ED6500FE3A71 /* Astronaut.swift */,
 				60C6CFA027E4F02700FE3A71 /* Mission.swift */,
 				60C6CF9E27E4EDBE00FE3A71 /* Bundle-Decodable.swift */,
@@ -162,6 +165,7 @@
 			files = (
 				60C6CFA527E5CA1A00FE3A71 /* MissionView.swift in Sources */,
 				60C6CF9D27E4ED6500FE3A71 /* Astronaut.swift in Sources */,
+				60C6CFA727E5D25E00FE3A71 /* AstronautView.swift in Sources */,
 				60C6CFA327E4F69900FE3A71 /* Color-Theme.swift in Sources */,
 				60CEDC5B27DFBCFD00B3B6CD /* ContentView.swift in Sources */,
 				60CEDC5927DFBCFD00B3B6CD /* MoonshotApp.swift in Sources */,
