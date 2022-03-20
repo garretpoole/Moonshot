@@ -19,6 +19,7 @@
 		60CEDC5B27DFBCFD00B3B6CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CEDC5A27DFBCFD00B3B6CD /* ContentView.swift */; };
 		60CEDC5D27DFBCFE00B3B6CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CEDC5C27DFBCFE00B3B6CD /* Assets.xcassets */; };
 		60CEDC6027DFBCFE00B3B6CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60CEDC5F27DFBCFE00B3B6CD /* Preview Assets.xcassets */; };
+		60D5977E27E728D5007758AD /* CrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5977D27E728D5007758AD /* CrewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		60CEDC5A27DFBCFD00B3B6CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60CEDC5C27DFBCFE00B3B6CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60CEDC5F27DFBCFE00B3B6CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60D5977D27E728D5007758AD /* CrewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				60CEDC5827DFBCFD00B3B6CD /* MoonshotApp.swift */,
 				60CEDC5A27DFBCFD00B3B6CD /* ContentView.swift */,
 				60C6CFA427E5CA1A00FE3A71 /* MissionView.swift */,
+				60D5977D27E728D5007758AD /* CrewView.swift */,
 				60C6CFA627E5D25E00FE3A71 /* AstronautView.swift */,
 				60C6CF9C27E4ED6500FE3A71 /* Astronaut.swift */,
 				60C6CFA027E4F02700FE3A71 /* Mission.swift */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C6CFA527E5CA1A00FE3A71 /* MissionView.swift in Sources */,
+				60D5977E27E728D5007758AD /* CrewView.swift in Sources */,
 				60C6CF9D27E4ED6500FE3A71 /* Astronaut.swift in Sources */,
 				60C6CFA727E5D25E00FE3A71 /* AstronautView.swift in Sources */,
 				60C6CFA327E4F69900FE3A71 /* Color-Theme.swift in Sources */,
