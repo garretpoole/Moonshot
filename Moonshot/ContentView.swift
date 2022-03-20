@@ -15,7 +15,7 @@ struct ContentView: View {
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
-    
+    //toggles views
     @State private var listToggle = true
     
     var body: some View {
