@@ -16,46 +16,41 @@ struct ContentView: View {
         GridItem(.adaptive(minimum: 150))
     ]
     
+    @State private var listToggle = true
+    
     var body: some View {
         NavigationView{
-            ScrollView{
-                LazyVGrid(columns: columns){
-                    ForEach(missions) { mission in
-                        NavigationLink {
-                            MissionView(mission: mission, astronauts: astronauts)
+            
+            if listToggle{
+                ListView(astronauts: astronauts, missions: missions)
+                    .navigationTitle("Moonshot")
+                    .background(.darkBackground)
+                    .preferredColorScheme(.dark)
+                    .toolbar {
+                        Button{
+                            listToggle.toggle()
                         } label: {
-                            VStack{
-                                Image(mission.image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                                    .padding()
-                                
-                                VStack{
-                                    Text(mission.displayName)
-                                        .font(.headline)
-                                        .foregroundColor(.white)
-                                    Text(mission.formattedLaunchDate)
-                                        .font(.caption)
-                                        .foregroundColor(.white.opacity(0.5))
-                                }
-                                .padding(.vertical)
-                                .frame(maxWidth: .infinity)
-                                .background(.lightBackground)
-                            }
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(.lightBackground)
-                            )
+                            Text("Grid")
+                                .font(.title3)
+                                .foregroundColor(.secondary)
                         }
                     }
-                }
-                .padding([.horizontal, .bottom])
+
+            } else{
+                GridView(astronauts: astronauts, missions: missions)
+                    .navigationTitle("Moonshot")
+                    .background(.darkBackground)
+                    .preferredColorScheme(.dark)
+                    .toolbar {
+                        Button{
+                            listToggle.toggle()
+                        } label: {
+                            Text("List")
+                                .font(.title3)
+                                .foregroundColor(.secondary)
+                        }
+                    }
             }
-            .navigationTitle("Moonshot")
-            .background(.darkBackground)
-            .preferredColorScheme(.dark)
         }
     }
 }
