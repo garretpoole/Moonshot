@@ -34,6 +34,8 @@ struct ContentView: View {
                                 .font(.title3)
                                 .foregroundColor(.secondary)
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("Toggle Grid")
                     }
 
             } else{
@@ -49,6 +51,8 @@ struct ContentView: View {
                                 .font(.title3)
                                 .foregroundColor(.secondary)
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("Toggle List")
                     }
             }
         }

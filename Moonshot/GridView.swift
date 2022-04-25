@@ -28,6 +28,7 @@ struct GridView: View {
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
                                 .padding()
+                                .accessibilityHidden(true)
                             
                             VStack{
                                 Text(mission.displayName)
@@ -47,6 +48,9 @@ struct GridView: View {
                                 .stroke(.lightBackground)
                         )
                     }
+                    .accessibilityElement()
+                    .accessibilityLabel(mission.displayName)
+                    .accessibilityAddTraits(.isButton)
                 }
             }
             .padding([.horizontal, .bottom])

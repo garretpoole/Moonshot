@@ -25,6 +25,7 @@ struct MissionView: View {
                         .scaledToFit()
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
+                        .accessibilityHidden(true)
                     
                     if mission.formattedLaunchDate != "N/A"{
                         Text(mission.formattedLaunchDate)
@@ -49,15 +50,25 @@ struct MissionView: View {
                             .frame(height: 2)
                             .foregroundColor(.lightBackground)
                             .padding(.vertical)
-                        
-                        Text("Crew")
-                            .font(.title.bold())
-                            .padding(.bottom, 5)
+
                     }
                     .padding(.horizontal)
+                    .accessibilityElement()
+                    .accessibilityLabel(mission.displayName)
+                    .accessibilityHint(mission.description)
                     
                     //works best edge to edge so outside of VStack
                     //else would have horizontal padding and would look off
+                    HStack{
+                        Text("Crew")
+                        .font(.title.bold())
+                        .padding(.bottom, 5)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    .accessibilityElement()
+                    .accessibilityLabel("Crew")
+                    
                     CrewView(crew: crew)
                 }
                 .padding(.bottom)
