@@ -15,6 +15,7 @@ struct AstronautView: View {
                 Image(astronaut.id)
                     .resizable()
                     .scaledToFit()
+                    .accessibilityHidden(true)
                 
                 Text(astronaut.description)
                     .padding()
@@ -23,6 +24,9 @@ struct AstronautView: View {
         .background(.darkBackground)
         .navigationTitle(astronaut.name)
         .navigationBarTitleDisplayMode(.inline)
+        .accessibilityElement()
+        .accessibilityLabel(astronaut.name)
+        .accessibilityHint(astronaut.description)
     }
 }
 
